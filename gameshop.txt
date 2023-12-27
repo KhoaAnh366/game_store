@@ -1,0 +1,1 @@
+CREATE TABLE `gamestore`.`tbproduct` (`name` VARCHAR(40) NOT NULL AUTO_INCREMENT , `gameconsole` VARCHAR(20) NOT NULL , `brand` VARCHAR(40) NOT NULL , `type` VARCHAR(300) NOT NULL , `detail` VARCHAR(1000) NOT NULL , `price` INT(100) NOT NULL , PRIMARY KEY (`name`)) ENGINE = InnoDB;
