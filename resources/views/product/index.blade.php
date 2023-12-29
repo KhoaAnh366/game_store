@@ -33,9 +33,11 @@
                             <tr>
                                 <th>Product Id</th>
                                 <th>Product Name</th>
+                                <th>Brand</th>
+                                <th>Genre</th>
                                 <th>Price</th>
                                 <th>Image</th>
-                                <th></th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -43,6 +45,8 @@
                             <tr>
                                 <td>{{ $p->id }}</td>
                                 <td>{{ $p->name }}</td>
+                                <td>{{ $p->brand }}</td>
+                                <td>{{ $p->genre }}</td>
                                 <td>{{ $p->price }}</td>
                                 <td><img width="100px" src="{{ url('images/'.$p->image) }}" /></td>
                                 <td class="text-right">
@@ -63,6 +67,8 @@
                             <tr>
                                 <th>Product Id</th>
                                 <th>Product Name</th>
+                                <th>Brand</th>
+                                <th>Genre</th>
                                 <th>Price</th>
                                 <th>Image</th>
                                 <th></th>

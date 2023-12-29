@@ -33,11 +33,13 @@ class ProductController extends Controller
         } else {
             $imageName = null;
         }
-        DB::table('product')->insert([
+        DB::table('tbproducts')->insert([
             'id' => intval($product['id']),
             'name' => $product['name'],
-            'price' => intval($product['price']),
+            'brand' => $product['brand'],
+            'genre' => $product['genre'],
             'description' => $product['description'],
+            'price' => intval($product['price']),
             'image' => $imageName
         ]);
         return redirect()->action([ProductController::class, 'index']);
@@ -54,7 +56,10 @@ class ProductController extends Controller
     {
         $name = $request->input('name');
         $price = $request->input('price');
+        $brand = $request->input('brand');
+        $genre = $request->input('genre');
         $description = $request->input('description');
+
         // xử lý upload hình vào thư mục
         if ($request->hasFile('image')) {
             $file = $request->file('image');
@@ -70,7 +75,7 @@ class ProductController extends Controller
         }
         $p = DB::table('tbproducts')
             ->where('id', intval($id))
-            ->update(['name' => $name, 'price' => intval($price), 'description' => $description, 'image' => $imageName]);
+            ->update(['name' => $name, 'price' => intval($price), 'description' => $description, 'genre' => $genre,  'brand' => $brand, 'image' => $imageName]);
 
         return redirect()->action([ProductController::class, 'index']);
     }

@@ -18,15 +18,23 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="txt-id">Product Id</label>
-                                <input type="text" class="form-control" id="txt-id" name="id" placeholder="1">
+                                <input type="text" class="form-control" id="txt-id" name="id" placeholder="Input product ID">
                             </div>
                             <div class="form-group">
                                 <label for="txt-name">Product Name</label>
-                                <input type="text" class="form-control" id="txt-name" name="name" placeholder="Input Product Name">
+                                <input type="text" class="form-control" id="txt-name" name="name" placeholder="Input product name">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-brand">Brand</label>
+                                <input type="text" class="form-control" id="txt-brand" name="brand" placeholder="Input product game">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-genre">Genre</label>
+                                <input type="text" class="form-control" id="txt-genre" name="genre" placeholder="Input genre">
                             </div>
                             <div class="form-group">
                                 <label for="txt-price">Product Price</label>
-                                <input type="text" class="form-control" id="txt-price" name="price" placeholder="1">
+                                <input type="text" class="form-control" id="txt-price" name="price" placeholder="Input product price">
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
